@@ -1,0 +1,5 @@
+module SRTISManagerPrivates {
+    header "../SRTextInputSourceImpl.h"
+    header "../SRTextInputSourceManagerImpl.h"
+    export *
+}

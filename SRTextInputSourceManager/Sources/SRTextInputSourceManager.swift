@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SRTISManagerPrivates
 
 public class SRTextInputSource {
     private let impl: SRTextInputSourceImpl
