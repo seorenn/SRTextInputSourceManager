@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8A47D69F1B6F4CD5004CA762 /* SRTextInputSourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D69E1B6F4CD5004CA762 /* SRTextInputSourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A47D6AB1B6F4D68004CA762 /* SRTextInputSourceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A47D6AB1B6F4D68004CA762 /* SRTextInputSourceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8A47D6AC1B6F4D68004CA762 /* SRTextInputSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6A81B6F4D68004CA762 /* SRTextInputSourceImpl.m */; };
-		8A47D6AD1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A47D6AD1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8A47D6AE1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */; };
 		8A47D6B01B6F4F8A004CA762 /* SRTextInputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +24,7 @@
 		8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRTextInputSourceManagerImpl.h; path = Sources/SRTextInputSourceManagerImpl.h; sourceTree = "<group>"; };
 		8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRTextInputSourceManagerImpl.m; path = Sources/SRTextInputSourceManagerImpl.m; sourceTree = "<group>"; };
 		8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRTextInputSourceManager.swift; path = Sources/SRTextInputSourceManager.swift; sourceTree = "<group>"; };
+		8A47D72E1B7329F2004CA762 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		8A47D6A61B6F4CDB004CA762 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				8A47D72D1B7329F2004CA762 /* SRTISManagerPrivates */,
 				8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */,
 				8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */,
 				8A47D6A81B6F4D68004CA762 /* SRTextInputSourceImpl.m */,
@@ -73,6 +75,15 @@
 				8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		8A47D72D1B7329F2004CA762 /* SRTISManagerPrivates */ = {
+			isa = PBXGroup;
+			children = (
+				8A47D72E1B7329F2004CA762 /* module.modulemap */,
+			);
+			name = SRTISManagerPrivates;
+			path = Sources/SRTISManagerPrivates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SRTextInputSourceManager/Sources";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -251,6 +263,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SRTextInputSourceManager/Sources";
 				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

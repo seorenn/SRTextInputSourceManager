@@ -15,6 +15,4 @@ FOUNDATION_EXPORT double SRTextInputSourceManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char SRTextInputSourceManagerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SRTextInputSourceManager/PublicHeader.h>
-#import <SRTextInputSourceManager/SRTextInputSourceImpl.h>
-#import <SRTextInputSourceManager/SRTextInputSourceManagerImpl.h>
 
