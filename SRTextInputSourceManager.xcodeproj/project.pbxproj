@@ -3,113 +3,125 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A47D69F1B6F4CD5004CA762 /* SRTextInputSourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D69E1B6F4CD5004CA762 /* SRTextInputSourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A47D6AB1B6F4D68004CA762 /* SRTextInputSourceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8A47D6AC1B6F4D68004CA762 /* SRTextInputSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6A81B6F4D68004CA762 /* SRTextInputSourceImpl.m */; };
-		8A47D6AD1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8A47D6AE1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */; };
-		8A47D6B01B6F4F8A004CA762 /* SRTextInputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */; };
+		8A533D962110ACDB00622364 /* SRTextInputSourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A533D8C2110ACDB00622364 /* SRTextInputSourceManager.framework */; };
+		8A533D9B2110ACDB00622364 /* SRTextInputSourceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A533D9A2110ACDB00622364 /* SRTextInputSourceManagerTests.swift */; };
+		8A533D9D2110ACDB00622364 /* SRTextInputSourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A533D8F2110ACDB00622364 /* SRTextInputSourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A533DAE2110AE5900622364 /* SRTextInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A533DAC2110AE5900622364 /* SRTextInputSource.swift */; };
+		8A533DAF2110AE5900622364 /* SRTextInputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A533DAD2110AE5900622364 /* SRTextInputSourceManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A533D972110ACDB00622364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A533D832110ACDB00622364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A533D8B2110ACDB00622364;
+			remoteInfo = SRTextInputSourceManager;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		8A47D69B1B6F4CD5004CA762 /* SRTextInputSourceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRTextInputSourceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A47D69E1B6F4CD5004CA762 /* SRTextInputSourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRTextInputSourceManager.h; sourceTree = "<group>"; };
-		8A47D6A01B6F4CD5004CA762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRTextInputSourceImpl.h; path = Sources/SRTextInputSourceImpl.h; sourceTree = "<group>"; };
-		8A47D6A81B6F4D68004CA762 /* SRTextInputSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRTextInputSourceImpl.m; path = Sources/SRTextInputSourceImpl.m; sourceTree = "<group>"; };
-		8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRTextInputSourceManagerImpl.h; path = Sources/SRTextInputSourceManagerImpl.h; sourceTree = "<group>"; };
-		8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRTextInputSourceManagerImpl.m; path = Sources/SRTextInputSourceManagerImpl.m; sourceTree = "<group>"; };
-		8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRTextInputSourceManager.swift; path = Sources/SRTextInputSourceManager.swift; sourceTree = "<group>"; };
-		8A47D72E1B7329F2004CA762 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		8A533D8C2110ACDB00622364 /* SRTextInputSourceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRTextInputSourceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A533D8F2110ACDB00622364 /* SRTextInputSourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRTextInputSourceManager.h; sourceTree = "<group>"; };
+		8A533D902110ACDB00622364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A533D952110ACDB00622364 /* SRTextInputSourceManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRTextInputSourceManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A533D9A2110ACDB00622364 /* SRTextInputSourceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTextInputSourceManagerTests.swift; sourceTree = "<group>"; };
+		8A533D9C2110ACDB00622364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A533DAC2110AE5900622364 /* SRTextInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRTextInputSource.swift; path = Source/SRTextInputSource.swift; sourceTree = SOURCE_ROOT; };
+		8A533DAD2110AE5900622364 /* SRTextInputSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRTextInputSourceManager.swift; path = Source/SRTextInputSourceManager.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8A47D6971B6F4CD5004CA762 /* Frameworks */ = {
+		8A533D892110ACDB00622364 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A533D922110ACDB00622364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A533D962110ACDB00622364 /* SRTextInputSourceManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A47D6911B6F4CD5004CA762 = {
+		8A533D822110ACDB00622364 = {
 			isa = PBXGroup;
 			children = (
-				8A47D69D1B6F4CD5004CA762 /* SRTextInputSourceManager */,
-				8A47D69C1B6F4CD5004CA762 /* Products */,
+				8A533D8E2110ACDB00622364 /* SRTextInputSourceManager */,
+				8A533D992110ACDB00622364 /* SRTextInputSourceManagerTests */,
+				8A533D8D2110ACDB00622364 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8A47D69C1B6F4CD5004CA762 /* Products */ = {
+		8A533D8D2110ACDB00622364 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A47D69B1B6F4CD5004CA762 /* SRTextInputSourceManager.framework */,
+				8A533D8C2110ACDB00622364 /* SRTextInputSourceManager.framework */,
+				8A533D952110ACDB00622364 /* SRTextInputSourceManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8A47D69D1B6F4CD5004CA762 /* SRTextInputSourceManager */ = {
+		8A533D8E2110ACDB00622364 /* SRTextInputSourceManager */ = {
 			isa = PBXGroup;
 			children = (
-				8A47D6A61B6F4CDB004CA762 /* Sources */,
-				8A47D69E1B6F4CD5004CA762 /* SRTextInputSourceManager.h */,
-				8A47D6A01B6F4CD5004CA762 /* Info.plist */,
+				8A533DAB2110AE4700622364 /* Source */,
+				8A533D8F2110ACDB00622364 /* SRTextInputSourceManager.h */,
+				8A533D902110ACDB00622364 /* Info.plist */,
 			);
 			path = SRTextInputSourceManager;
 			sourceTree = "<group>";
 		};
-		8A47D6A61B6F4CDB004CA762 /* Sources */ = {
+		8A533D992110ACDB00622364 /* SRTextInputSourceManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A47D72D1B7329F2004CA762 /* SRTISManagerPrivates */,
-				8A47D6AF1B6F4F8A004CA762 /* SRTextInputSourceManager.swift */,
-				8A47D6A71B6F4D68004CA762 /* SRTextInputSourceImpl.h */,
-				8A47D6A81B6F4D68004CA762 /* SRTextInputSourceImpl.m */,
-				8A47D6A91B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h */,
-				8A47D6AA1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m */,
+				8A533D9A2110ACDB00622364 /* SRTextInputSourceManagerTests.swift */,
+				8A533D9C2110ACDB00622364 /* Info.plist */,
 			);
-			name = Sources;
+			path = SRTextInputSourceManagerTests;
 			sourceTree = "<group>";
 		};
-		8A47D72D1B7329F2004CA762 /* SRTISManagerPrivates */ = {
+		8A533DAB2110AE4700622364 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8A47D72E1B7329F2004CA762 /* module.modulemap */,
+				8A533DAC2110AE5900622364 /* SRTextInputSource.swift */,
+				8A533DAD2110AE5900622364 /* SRTextInputSourceManager.swift */,
 			);
-			name = SRTISManagerPrivates;
-			path = Sources/SRTISManagerPrivates;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8A47D6981B6F4CD5004CA762 /* Headers */ = {
+		8A533D872110ACDB00622364 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A47D69F1B6F4CD5004CA762 /* SRTextInputSourceManager.h in Headers */,
-				8A47D6AB1B6F4D68004CA762 /* SRTextInputSourceImpl.h in Headers */,
-				8A47D6AD1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.h in Headers */,
+				8A533D9D2110ACDB00622364 /* SRTextInputSourceManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8A47D69A1B6F4CD5004CA762 /* SRTextInputSourceManager */ = {
+		8A533D8B2110ACDB00622364 /* SRTextInputSourceManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A47D6A31B6F4CD5004CA762 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManager" */;
+			buildConfigurationList = 8A533DA02110ACDC00622364 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManager" */;
 			buildPhases = (
-				8A47D6961B6F4CD5004CA762 /* Sources */,
-				8A47D6971B6F4CD5004CA762 /* Frameworks */,
-				8A47D6981B6F4CD5004CA762 /* Headers */,
-				8A47D6991B6F4CD5004CA762 /* Resources */,
+				8A533D872110ACDB00622364 /* Headers */,
+				8A533D882110ACDB00622364 /* Sources */,
+				8A533D892110ACDB00622364 /* Frameworks */,
+				8A533D8A2110ACDB00622364 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -117,43 +129,73 @@
 			);
 			name = SRTextInputSourceManager;
 			productName = SRTextInputSourceManager;
-			productReference = 8A47D69B1B6F4CD5004CA762 /* SRTextInputSourceManager.framework */;
+			productReference = 8A533D8C2110ACDB00622364 /* SRTextInputSourceManager.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		8A533D942110ACDB00622364 /* SRTextInputSourceManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A533DA32110ACDC00622364 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManagerTests" */;
+			buildPhases = (
+				8A533D912110ACDB00622364 /* Sources */,
+				8A533D922110ACDB00622364 /* Frameworks */,
+				8A533D932110ACDB00622364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A533D982110ACDB00622364 /* PBXTargetDependency */,
+			);
+			name = SRTextInputSourceManagerTests;
+			productName = SRTextInputSourceManagerTests;
+			productReference = 8A533D952110ACDB00622364 /* SRTextInputSourceManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8A47D6921B6F4CD5004CA762 /* Project object */ = {
+		8A533D832110ACDB00622364 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Seorenn;
 				TargetAttributes = {
-					8A47D69A1B6F4CD5004CA762 = {
-						CreatedOnToolsVersion = 7.0;
+					8A533D8B2110ACDB00622364 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					8A533D942110ACDB00622364 = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 8A47D6951B6F4CD5004CA762 /* Build configuration list for PBXProject "SRTextInputSourceManager" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 8A533D862110ACDB00622364 /* Build configuration list for PBXProject "SRTextInputSourceManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8A47D6911B6F4CD5004CA762;
-			productRefGroup = 8A47D69C1B6F4CD5004CA762 /* Products */;
+			mainGroup = 8A533D822110ACDB00622364;
+			productRefGroup = 8A533D8D2110ACDB00622364 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A47D69A1B6F4CD5004CA762 /* SRTextInputSourceManager */,
+				8A533D8B2110ACDB00622364 /* SRTextInputSourceManager */,
+				8A533D942110ACDB00622364 /* SRTextInputSourceManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8A47D6991B6F4CD5004CA762 /* Resources */ = {
+		8A533D8A2110ACDB00622364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A533D932110ACDB00622364 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,44 +205,73 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8A47D6961B6F4CD5004CA762 /* Sources */ = {
+		8A533D882110ACDB00622364 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A47D6B01B6F4F8A004CA762 /* SRTextInputSourceManager.swift in Sources */,
-				8A47D6AE1B6F4D68004CA762 /* SRTextInputSourceManagerImpl.m in Sources */,
-				8A47D6AC1B6F4D68004CA762 /* SRTextInputSourceImpl.m in Sources */,
+				8A533DAE2110AE5900622364 /* SRTextInputSource.swift in Sources */,
+				8A533DAF2110AE5900622364 /* SRTextInputSourceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A533D912110ACDB00622364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A533D9B2110ACDB00622364 /* SRTextInputSourceManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8A533D982110ACDB00622364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A533D8B2110ACDB00622364 /* SRTextInputSourceManager */;
+			targetProxy = 8A533D972110ACDB00622364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		8A47D6A11B6F4CD5004CA762 /* Debug */ = {
+		8A533D9E2110ACDC00622364 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -214,44 +285,57 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SRTextInputSourceManager/Sources";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8A47D6A21B6F4CD5004CA762 /* Release */ = {
+		8A533D9F2110ACDC00622364 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -259,21 +343,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/SRTextInputSourceManager/Sources";
-				VALID_ARCHS = "i386 x86_64 armv7s armv7 arm64";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8A47D6A41B6F4CD5004CA762 /* Debug */ = {
+		8A533DA12110ACDC00622364 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -282,18 +368,25 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SRTextInputSourceManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManager;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		8A47D6A51B6F4CD5004CA762 /* Release */ = {
+		8A533DA22110ACDC00622364 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -302,35 +395,85 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SRTextInputSourceManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManager;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		8A533DA42110ACDC00622364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SRTextInputSourceManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8A533DA52110ACDC00622364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SRTextInputSourceManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A47D6951B6F4CD5004CA762 /* Build configuration list for PBXProject "SRTextInputSourceManager" */ = {
+		8A533D862110ACDB00622364 /* Build configuration list for PBXProject "SRTextInputSourceManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A47D6A11B6F4CD5004CA762 /* Debug */,
-				8A47D6A21B6F4CD5004CA762 /* Release */,
+				8A533D9E2110ACDC00622364 /* Debug */,
+				8A533D9F2110ACDC00622364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A47D6A31B6F4CD5004CA762 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManager" */ = {
+		8A533DA02110ACDC00622364 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A47D6A41B6F4CD5004CA762 /* Debug */,
-				8A47D6A51B6F4CD5004CA762 /* Release */,
+				8A533DA12110ACDC00622364 /* Debug */,
+				8A533DA22110ACDC00622364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A533DA32110ACDC00622364 /* Build configuration list for PBXNativeTarget "SRTextInputSourceManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A533DA42110ACDC00622364 /* Debug */,
+				8A533DA52110ACDC00622364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8A47D6921B6F4CD5004CA762 /* Project object */;
+	rootObject = 8A533D832110ACDB00622364 /* Project object */;
 }
