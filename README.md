@@ -1,22 +1,19 @@
 SRTextInputSourceManager
 ========================
 
-The Text Input Source Manager for OS X. This Framework using Carbon TIS APIs.
+The Text Input Source Manager for macOS. This Framework using Carbon TIS APIs.
 
 <pre>
 // Getting Input Source Instance List
-let inputSources = SRTextInputSourceManager.sharedManager.textInputSources
-
-// Getting Current Activating Input Source Index
-let currentIndex = SRTextInputSourceManager.sharedManager.currentTextInputSourceIndex
+let inputSources = SRTextInputSourceManager.shared.inputSources
 
 // Getting Current Activating Input Source Instance
-let currentInputSource = SRTextInputSourceManager.sharedManager.currentInputSource
+let currentInputSource = SRTextInputSourceManager.shared.activatingInputSource
 
 // Getting Input Source Informations
 let inputSource = inputSources[someIndex]
-println("Name = \(inputSource.localizedName)")
-println("ID = \(inputSource.ID)")
+print("Name = \(inputSource.localizedName)")
+print("Identifier = \(inputSource.identifier)")
 
 // Activating Input Source
 inputSource.activate()
