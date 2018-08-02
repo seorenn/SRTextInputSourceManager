@@ -10,9 +10,9 @@ import Carbon
 
 public class SRTextInputSourceManager {
 
-    static let shared = SRTextInputSourceManager()
+    public static let shared = SRTextInputSourceManager()
     
-    var inputSources: [SRTextInputSource] {
+    public var inputSources: [SRTextInputSource] {
         guard let iss = TISCreateInputSourceList(nil, false)?.takeRetainedValue() as? [TISInputSource] else {
             return []
         }
@@ -20,11 +20,11 @@ public class SRTextInputSourceManager {
         return iss.map { SRTextInputSource(inputSource: $0) }
     }
     
-    var activatingInputSource: SRTextInputSource? {
+    public var activatingInputSource: SRTextInputSource? {
         return SRTextInputSource(inputSource: TISCopyCurrentKeyboardInputSource()!.takeRetainedValue())
     }
     
-    func inputSource(identifier: String) -> SRTextInputSource? {
+    public func inputSource(identifier: String) -> SRTextInputSource? {
         for source in inputSources {
             if source.identifier == identifier {
                 return source
