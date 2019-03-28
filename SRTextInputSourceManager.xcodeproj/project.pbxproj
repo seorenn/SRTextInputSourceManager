@@ -162,10 +162,11 @@
 				TargetAttributes = {
 					8A533D8B2110ACDB00622364 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					8A533D942110ACDB00622364 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -175,6 +176,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8A533D822110ACDB00622364;
 			productRefGroup = 8A533D8D2110ACDB00622364 /* Products */;
@@ -377,7 +379,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -403,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -421,7 +423,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -439,7 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seorenn.SRTextInputSourceManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
