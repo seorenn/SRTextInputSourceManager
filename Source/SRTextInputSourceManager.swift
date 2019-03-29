@@ -11,6 +11,21 @@ import Carbon
 public class SRTextInputSourceManager {
 
     public static let shared = SRTextInputSourceManager()
+
+    public var inputSourceSelected: (() -> Void)? = nil
+
+    public init() {
+        DistributedNotificationCenter.default().addObserver(forName: Notification.Name(rawValue: kTISNotifySelectedKeyboardInputSourceChanged as String), object: nil, queue: OperationQueue.main) {
+            [unowned self] (notification) in
+            if let handler = self.inputSourceSelected {
+                handler()
+            }
+        }
+    }
+
+    deinit {
+        DistributedNotificationCenter.default().removeObserver(self)
+    }
     
     public var inputSources: [SRTextInputSource] {
         guard let iss = TISCreateInputSourceList(nil, false)?.takeRetainedValue() as? [TISInputSource] else {

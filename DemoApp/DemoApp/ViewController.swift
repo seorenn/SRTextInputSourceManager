@@ -21,6 +21,10 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        SRTextInputSourceManager.shared.inputSourceSelected = { () in
+            guard let currentInputSource = SRTextInputSourceManager.shared.activatingInputSource else { return }
+            print("Current Input Source: \(currentInputSource)")
+        }
     }
 
     override var representedObject: Any? {
