@@ -1,6 +1,8 @@
 SRTextInputSourceManager
 ========================
 
+[![Platform macOS](https://img.shields.io/badge/Platform-macOS-blue.svg?style=flat)](https://github.com/seorenn/SRTextInputSourceManager) [![Swift 5](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://github.com/seorenn/SRTextInputSourceManager) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 The Text Input Source Manager for macOS. This Framework using Carbon TIS APIs.
 
 <pre>
