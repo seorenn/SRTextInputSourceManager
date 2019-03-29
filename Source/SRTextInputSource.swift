@@ -30,16 +30,35 @@ public struct SRTextInputSource: CustomDebugStringConvertible {
         return unsafeBitCast(ptr, to: CFString.self) as String
     }
     
-    public var debugDescription: String {
-        return "<SRTextInputSource: \(localizedName)(\(identifier))"
+    public var isEnableCapable: Bool {
+        let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceIsEnableCapable)
+        let cfbool = unsafeBitCast(ptr, to: CFBoolean.self)
+        return CFBooleanGetValue(cfbool)
     }
-    
+
+    public var isEnabled: Bool {
+        let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceIsEnabled)
+        let cfbool = unsafeBitCast(ptr, to: CFBoolean.self)
+        return CFBooleanGetValue(cfbool)
+    }
+
     public var isSelectCapable: Bool {
         let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceIsSelectCapable)
         let cfbool = unsafeBitCast(ptr, to: CFBoolean.self)
         return CFBooleanGetValue(cfbool)
     }
-    
+
+    public var isSelected: Bool {
+        let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyInputSourceIsSelected)
+        let cfbool = unsafeBitCast(ptr, to: CFBoolean.self)
+        return CFBooleanGetValue(cfbool)
+    }
+
+    public var inputModeIdentifier: String {
+        let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyInputModeID)
+        return unsafeBitCast(ptr, to: CFString.self) as String
+    }
+
     public var iconImageURL: URL? {
         if let ptr = TISGetInputSourceProperty(inputSource, kTISPropertyIconImageURL) {
             return unsafeBitCast(ptr, to: CFURL.self) as URL
@@ -49,23 +68,22 @@ public struct SRTextInputSource: CustomDebugStringConvertible {
     }
     
     public var iconImage: NSImage? {
-        guard let url = iconImageURL else {
-            return nil
+        if let iconPtr = TISGetInputSourceProperty(inputSource, kTISPropertyIconRef) {
+            let iconRef = unsafeBitCast(iconPtr, to: IconRef.self)
+            return NSImage(iconRef: iconRef)
+        } else if let url = iconImageURL {
+            if let image = NSImage(contentsOf: url) {
+                return image
+            }
+
+            let tiffurl = URL(fileURLWithPath: url.deletingPathExtension().path + ".tiff")
+            print("orig url = \(url), tiff = \(tiffurl)")
+            if let image = NSImage(contentsOf: tiffurl) {
+                return image
+            }
+
         }
-        
-        if let image = NSImage(contentsOf: url) {
-            return image
-        }
-        
-        if url.pathExtension != "png" {
-            return nil
-        }
-        
-        let tiffurl = URL(fileURLWithPath: url.deletingPathExtension().path + ".tiff")
-        print("orig url = \(url), tiff = \(tiffurl)")
-        if let image = NSImage(contentsOf: tiffurl) {
-            return image
-        }
+
         return nil
     }
     
@@ -80,4 +98,9 @@ public struct SRTextInputSource: CustomDebugStringConvertible {
     public func activate() {
         TISSelectInputSource(inputSource)
     }
+
+    public var debugDescription: String {
+        return "<SRTextInputSource: \(localizedName)(\(identifier))"
+    }
+
 }
