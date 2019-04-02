@@ -68,20 +68,21 @@ public struct SRTextInputSource: CustomDebugStringConvertible {
     }
     
     public var iconImage: NSImage? {
-        if let iconPtr = TISGetInputSourceProperty(inputSource, kTISPropertyIconRef) {
-            let iconRef = unsafeBitCast(iconPtr, to: IconRef.self)
-            return NSImage(iconRef: iconRef)
-        } else if let url = iconImageURL {
-            if let image = NSImage(contentsOf: url) {
-                return image
-            }
+        guard let iconPtr = TISGetInputSourceProperty(inputSource, kTISPropertyIconRef) else { return nil }
+        let iconRef = unsafeBitCast(iconPtr, to: IconRef.self)
+        return NSImage(iconRef: iconRef)
+    }
 
-            let tiffurl = URL(fileURLWithPath: url.deletingPathExtension().path + ".tiff")
-            print("orig url = \(url), tiff = \(tiffurl)")
-            if let image = NSImage(contentsOf: tiffurl) {
-                return image
-            }
+    public var alternativeIconImage: NSImage? {
+        guard let url = iconImageURL else { return nil }
 
+        if let image = NSImage(contentsOf: url) {
+            return image
+        }
+
+        let tiffurl = URL(fileURLWithPath: url.deletingPathExtension().path + ".tiff")
+        if let image = NSImage(contentsOf: tiffurl) {
+            return image
         }
 
         return nil

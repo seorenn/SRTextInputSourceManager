@@ -54,7 +54,10 @@ extension ViewController: NSTableViewDelegate, NSTableViewDataSource {
             cell.textField?.stringValue = item.localizedName
 
             if let image = item.iconImage {
-                //image.isTemplate = true
+                image.isTemplate = false
+                cell.imageView?.image = image
+            } else if let image = item.alternativeIconImage {
+                image.isTemplate = true
                 cell.imageView?.image = image
             }
 
